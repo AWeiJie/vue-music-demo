@@ -1,0 +1,85 @@
+@import "../../sass/_base.scss";
+
+.rank {
+  background-color: #eee;
+  padding-top: px2rem(60);
+
+  .search-container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+
+  .nav {
+    display: flex;
+
+    li {
+      height: px2rem(50);
+      flex: 1;
+      text-align: center;
+      line-height:px2rem(50);
+
+      a {
+        color: black;
+      }
+
+      .router-link-exact-active {
+         color: #e4393c;
+      }
+    }
+  }
+
+  .rank-list {
+    li {
+      background-color: #fff;
+      display: flex;
+      border-radius: px2rem(5);
+      margin-bottom: px2rem(10);
+
+      div {
+        flex:1;
+        min-width:0;
+        margin: 0 px2rem(10) 0 px2rem(15);
+
+        h2 {
+          font-size: px2rem(16);
+        }
+
+        p {
+          width: 100%;
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+          margin-bottom: px2rem(5);
+          color:rgba(0,0,0,.5);
+
+          .name {
+            color: #000;
+            margin-left: px2rem(8);
+            margin-right: px2rem(5);
+          }
+        }
+      }
+
+      div.img-container {
+        flex: 0 0 30%;
+        position: relative;
+        margin: 0;
+
+        img {
+          width: 100%;
+        }
+
+        span {
+          position: absolute;
+          color: #fff;
+          left: px2rem(3);
+          bottom: px2rem(8);
+          font-size: px2rem(12);
+        }
+      }
+    }
+  }
+}

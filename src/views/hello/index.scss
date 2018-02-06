@@ -1,0 +1,138 @@
+@import "../../sass/_base.scss";
+
+.hello {
+  background-color: #eee;
+  padding-top: px2rem(60);
+
+  .search-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+  }
+
+  .nav {
+    display: flex;
+
+    li {
+      height: px2rem(50);
+      flex: 1;
+      text-align: center;
+      line-height:px2rem(50);
+
+      a {
+        color: black;
+      }
+
+      .router-link-exact-active {
+         color: #e4393c;
+      }
+    }
+  }
+  // 图片轮播
+  .swipe-container {
+    height: px2rem(150);
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  // 热门歌单
+  .hotlist-container {
+    background-color: #fff;
+    margin-top: px2rem(10);
+
+    .title {
+      text-align: center;
+      font-size: px2rem(16);
+      height: px2rem(50);
+      line-height: px2rem(50);
+    }
+
+    .list {
+      font-size: 0;
+
+      li {
+        display: inline-block;
+        width: 47%;
+        margin-bottom: px2rem(5);
+        padding: 2%;
+
+        .img-container {
+          position: relative;
+          height: px2rem(180);
+
+          img {
+            width: 100%;
+            height: px2rem(180);
+          }
+
+          span {
+            position: relative;
+            bottom: px2rem(28);
+            font-size: px2rem(12);
+            color: #fff;
+          }
+        }
+
+        .describe {
+          width: 100%;
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+        }
+      }
+
+      li:nth-of-type(even) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  // MV首播
+  .mv-container {
+    margin-top: px2rem(10);
+
+    a {
+      color: #000;
+    }
+
+    li {
+      background-color: #fff;
+      margin-bottom: px2rem(10);
+      padding: px2rem(10);
+
+      .img-container {
+          position: relative;
+          color: #fff;
+
+        img {
+          width: 100%;
+        }
+
+        span {
+          position: absolute;
+          left: px2rem(5);
+          bottom:px2rem(10);
+        }
+
+        p {
+          position: absolute;
+          width: 100%;
+          bottom: 50%;
+          text-align: center;
+        }
+      }
+    }
+
+    li.title {
+      margin-bottom: 0;
+      text-align: center;
+      font-size: px2rem(16);
+      height: px2rem(25);
+      line-height: px2rem(30);
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@import "../../sass/_base.scss";
+
+.rankDetail {
+  .backgroundImg {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+
+  .container {
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    header {
+      height: px2rem(40);
+      width: 100%;
+      line-height: px2rem(40);
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 0 px2rem(10);
+    }
+
+    .slot {
+      height: px2rem(239);
+    }
+
+    .header-wrapper {
+      display: flex;
+      height: px2rem(65);
+      padding: 0 px2rem(10);
+
+      div {
+        flex: 1;
+
+        .listenNum {
+          font-size: px2rem(17);
+        }
+      }
+
+      .icon-wrapper {
+        flex: 0 0 20%;
+        text-align: right;
+        line-height: px2rem(65);
+        font-size: px2rem(50);
+        color: #fff;
+        opacity: 0.7;
+      }
+    }
+
+    .song-list {
+      li {
+        display: flex;
+        padding: 0 px2rem(10);
+        height: px2rem(54);
+        border-bottom: 1px solid rgba(255, 255, 255, .15);
+
+        .song {
+          min-width: 0;
+          flex: 1;
+          padding-top: px2rem(10);
+
+          .singer {
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+            color: #aaa;
+          }
+        }
+
+        .index {
+          flex: 0 0 px2rem(50);
+          line-height: px2rem(54);
+          font-size: px2rem(18);
+        }
+
+        .icon-wrapper {
+          flex: 0 0 px2rem(50);
+          text-align: right;
+          line-height: px2rem(54);
+        }
+      }
+    }
+
+    .dark {
+      color: #fff !important;
+    }
+  }
+}
